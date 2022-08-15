@@ -7,7 +7,7 @@ services:
       context: ./node
     container_name: node
     restart: always
-    # entrypoint: dockerize -wait tcp://db:3306 docker-entrypoint.sh
+    entrypoint: dockerize -wait tcp://db:3306 docker-entrypoint.sh npm start
     volumes:
       - ./node:/usr/src/app
     ports:
