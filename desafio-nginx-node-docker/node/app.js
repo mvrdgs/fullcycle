@@ -12,7 +12,7 @@ const PORT = 3000;
 
 // docker container run --name mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_USER=user -e MYSQL_PASSWORD=123456 -e MYSQL_DATABASE=fullcycle -p 3306:3306 -d mysql
 const connection = mysql.createConnection({
-    host: 'localhost',
+    host: 'db',
     user: 'root',
     password: 'root',
     database: 'fullcycle'
